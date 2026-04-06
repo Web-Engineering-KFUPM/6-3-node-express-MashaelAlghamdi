@@ -4,6 +4,7 @@
 
 import express from "express";
 import cors from "cors";
+import morgan from "morgan";
 
 const app = express();
 const PORT = 3000;
@@ -16,6 +17,7 @@ app.use(cors());
 
 // TODO 5: Import and apply Morgan middleware
 
+app.use(morgan("dev"));
 
 // TODO 6.1: Create root route "/"
 
